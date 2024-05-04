@@ -28,3 +28,15 @@ CMD ["python", "app.py"]
 # docker container ls
 # get the container id from above command
 # docker stop container-id
+# or docker container stop <container id>
+#docker system prune
+
+# for deploy to heroku we need the following commands
+#heroku container:login
+#heroku create python-dockerizer-app
+#heroku container:push web --app python-dockerizer-app
+
+#At this point, the docker container is pushed to Heroku, but not deployed or released.
+#The following command would deploy the container.
+
+#heroku container:release web --app python-dockerizer-app
