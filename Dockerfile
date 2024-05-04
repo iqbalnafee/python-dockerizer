@@ -23,3 +23,8 @@ CMD ["python", "app.py"]
 
 # to build docker image run the below command
 #docker image build -t python-dockerizer .
+
+# to re-run a docker container on same port:
+# docker container ls
+# get the container id from above command
+# docker stop container-id
